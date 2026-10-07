@@ -1,0 +1,148 @@
+/* ================================
+   GLOBAL STYLING
+   ================================ */
+
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+
+/* ================================
+   HEADER STYLING
+   ================================ */
+
+header {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header h2 {
+    font-size: 22px;
+}
+
+
+/* ================================
+   SECTION STYLING
+   ================================ */
+
+section h2,
+section h3 {
+    color: #17365d;
+    margin-bottom: 15px;
+}
+
+
+/* Class Selector */
+
+.financial-section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+}
+
+
+/* ================================
+   BALANCE SHEET TABLE
+   ================================ */
+
+#balance-sheet {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Table Header and Data Cells */
+
+#balance-sheet th,
+#balance-sheet td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+
+/* Amount (IDR) Column */
+
+#balance-sheet th:nth-child(3),
+#balance-sheet td:nth-child(3) {
+    text-align: right;
+}
+
+
+/* Table Head */
+
+#balance-sheet thead {
+    background-color: #1f4e79;
+    color: white;
+}
+
+
+/* Alternating Row Colors */
+
+#balance-sheet tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* Table Footer / Total */
+
+#balance-sheet tfoot {
+    background-color: #d9e2f3;
+    font-weight: bold;
+}
+
+
+/* ================================
+   CHANGES IN EQUITY LIST
+   ================================ */
+
+section ol {
+    margin-left: 30px;
+    padding-left: 20px;
+    list-style-type: upper-roman;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    background-image: url("assets/image/office.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.financial-section {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+}
