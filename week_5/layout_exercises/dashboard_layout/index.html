@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,76 +32,88 @@
         </aside>
 
         <main class="main-content">
-            <h1>Employee &amp; Salary Dashboard</h1>
 
-            <div class="summary-cards">
-                <div class="summary-card">
-                    <h3>Total Employees</h3>
-                    <p>25 Employees</p>
+            <h1>Financial Summary</h1>
+
+            <div class="summary-cards-container">
+
+                <div class="financial-card">
+                    <h2>Revenue</h2>
+                    <p class="value">IDR 25,000,000</p>
                 </div>
 
-                <div class="summary-card">
-                    <h3>Monthly Payroll</h3>
-                    <p>IDR 125,000,000</p>
+                <div class="financial-card">
+                    <h2>Expenses</h2>
+                    <p class="value negative">IDR 12,000,000</p>
                 </div>
 
-                <div class="summary-card">
-                    <h3>Payment Status</h3>
-                    <p>March 2026</p>
+                <div class="financial-card">
+                    <h2>Net Profit</h2>
+                    <p class="value">IDR 13,000,000</p>
                 </div>
+
             </div>
 
-            <h2>Employee Data and Salary Payment Input Form</h2>
+            <h2>Employee &amp; Salary Data Input</h2>
 
             <form method="post" action="#">
+
                 <fieldset>
                     <legend>Employee Information</legend>
 
                     <p>
                         <label for="employeeName">Full Name:</label>
-                        <input type="text" id="employeeName" name="employeeName"
-                               required placeholder="Employee's full name">
+                        <input type="text" id="employeeName"
+                               name="employeeName" required
+                               placeholder="Employee's full name">
                     </p>
 
                     <p>
                         <label for="employeeID">Employee ID:</label>
-                        <input type="text" id="employeeID" name="employeeID"
-                               required placeholder="Employee ID/NIK">
+                        <input type="text" id="employeeID"
+                               name="employeeID" required
+                               placeholder="Employee ID/NIK">
                     </p>
 
                     <p>
                         <label for="dob">Date of Birth:</label>
-                        <input type="date" id="dob" name="dob" required>
+                        <input type="date" id="dob"
+                               name="dob" required>
                     </p>
 
                     <fieldset class="radio-group">
-                        <legend>Gender</legend>
-                        <input type="radio" id="male" name="gender"
-                               value="Male" required>
+                        <legend>Gender:</legend>
+
+                        <input type="radio" id="male"
+                               name="gender" value="Male" required>
                         <label for="male">Male</label>
 
-                        <input type="radio" id="female" name="gender"
-                               value="Female">
+                        <input type="radio" id="female"
+                               name="gender" value="Female">
                         <label for="female">Female</label>
                     </fieldset>
 
                     <p>
                         <label for="employeeEmail">Email Address:</label>
-                        <input type="email" id="employeeEmail" name="employeeEmail"
+                        <input type="email" id="employeeEmail"
+                               name="employeeEmail"
                                placeholder="email@company.com">
                     </p>
 
                     <p>
                         <label for="employeePhone">Phone Number:</label>
-                        <input type="text" id="employeePhone" name="employeePhone"
+                        <input type="text" id="employeePhone"
+                               name="employeePhone"
                                placeholder="Example: 08123456789">
                     </p>
 
                     <p>
                         <label for="position">Position:</label>
-                        <input type="text" id="position" name="position"
+                        <input type="text" id="position"
+                               name="position"
                                placeholder="Accounting Manager / Tax Staff">
                     </p>
+
                 </fieldset>
 
                 <fieldset>
@@ -116,8 +127,9 @@
 
                     <p>
                         <label for="basicSalary">Basic Salary (IDR):</label>
-                        <input type="number" id="basicSalary" name="basicSalary"
-                               min="0" step="1000" required
+                        <input type="number" id="basicSalary"
+                               name="basicSalary" min="0"
+                               step="1000" required
                                placeholder="Example: 5000000">
                     </p>
 
@@ -136,18 +148,21 @@
                                name="bpjsDeduction" min="0"
                                step="100" value="0">
                     </p>
+
                 </fieldset>
 
-                <p class="form-buttons">
+                <p>
                     <input type="submit" value="Submit Salary Data">
                     <input type="reset" value="Reset Form">
                 </p>
+
             </form>
+
         </main>
     </div>
 
     <footer>
-        <p>&copy; 2026 Simple Accounting Dashboard</p>
+        <p>&copy; 2025 Simple Accounting Dashboard</p>
     </footer>
 
 </body>
