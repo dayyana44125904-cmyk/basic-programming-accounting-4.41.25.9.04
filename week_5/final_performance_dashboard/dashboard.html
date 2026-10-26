@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Financial Performance Dashboard of Taxora Consulting">
+
+    <title>Financial Performance Dashboard - Taxora Consulting</title>
+
+    <link rel="stylesheet" href="dashboard_styles.css">
+</head>
+
+<body>
+
+    <!-- ================================
+         HEADER AND TOP NAVIGATION
+         ================================ -->
+
+    <header class="site-header">
+
+        <nav class="top-nav" aria-label="Main Navigation">
+            <ul>
+                <li><a href="#summary">Dashboard</a></li>
+                <li><a href="#financial-reports">Financial Reports</a></li>
+                <li><a href="#record-expense">Data Input</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- ================================
+         SIDEBAR
+         ================================ -->
+
+    <aside class="sidebar">
+
+        <h2>Quick Menu</h2>
+
+        <ul>
+            <li>
+                <a href="#summary">Summary</a>
+            </li>
+
+            <li>
+                <a href="#income-statement">Income Statement</a>
+            </li>
+
+            <li>
+                <a href="../../week_4/final_styled_financial_report/index.html#balance-sheet">
+                    Balance Sheet
+                </a>
+            </li>
+
+            <li>
+                <a href="#cash-flow">Cash Flow</a>
+            </li>
+
+            <li>
+                <a href="#record-expense">Transaction Recording</a>
+            </li>
+        </ul>
+
+    </aside>
+
+
+    <!-- ================================
+         MAIN CONTENT
+         ================================ -->
+
+    <main class="main-content">
+
+        <h1>Company Financial Performance Dashboard</h1>
+
+        <p class="dashboard-subtitle">
+            Taxora Consulting | Financial Report 2025
+        </p>
+
+
+        <!-- FINANCIAL REPORTS INFORMATION -->
+
+        <section id="financial-reports" class="information-panel">
+
+            <h2>Financial Reports</h2>
+
+            <p>
+                Access the financial statements of Taxora Consulting
+                for the period ending December 31, 2025.
+            </p>
+
+            <a href="../../week_4/final_styled_financial_report/index.html">
+                View Statement of Financial Position and Changes in Equity
+            </a>
+
+        </section>
+
+
+        <!-- INCOME STATEMENT INFORMATION -->
+
+        <section id="income-statement" class="information-panel">
+
+            <h2>Income Statement Summary</h2>
+
+            <p>Total Revenue: IDR 45,000,000</p>
+            <p>Total Expenses: IDR 30,000,000</p>
+            <p><strong>Net Profit: IDR 15,000,000</strong></p>
+
+            <p class="data-note">
+                Revenue and expenses are illustrative figures.
+            </p>
+
+        </section>
+
+
+        <!-- CASH FLOW INFORMATION -->
+
+        <section id="cash-flow" class="information-panel">
+
+            <h2>Cash Flow Statement</h2>
+
+            <p>
+                The Cash Flow Statement is not yet available
+                because cash inflow and outflow data have not
+                been provided in the previous financial report.
+            </p>
+
+        </section>
+
+
+        <!-- SETTINGS INFORMATION -->
+
+        <section id="settings" class="information-panel">
+
+            <h2>Report Information</h2>
+
+            <p><strong>Company:</strong> Taxora Consulting</p>
+            <p><strong>Reporting Period:</strong> 2025</p>
+            <p><strong>Currency:</strong> Indonesian Rupiah (IDR)</p>
+
+        </section>
+
+
+        <!-- ================================
+             FINANCIAL SUMMARY
+             ================================ -->
+
+        <section id="summary" class="summary-section">
+
+            <div class="summary-cards-container">
+
+                <div class="financial-card">
+                    <h2>Total Revenue</h2>
+                    <p class="value">IDR 45,000,000</p>
+                </div>
+
+                <div class="financial-card">
+                    <h2>Total Expenses</h2>
+                    <p class="value negative">IDR 30,000,000</p>
+                </div>
+
+                <div class="financial-card">
+                    <h2>Net Profit</h2>
+                    <p class="value">IDR 15,000,000</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             EXPENSES BY CATEGORY
+             ================================ -->
+
+        <section id="expenses" class="financial-section">
+
+            <h2>Expenses by Category</h2>
+
+            <div class="table-wrapper">
+
+                <table id="expenses-table">
+
+                    <caption>
+                        Taxora Consulting - Monthly Expense Report
+                        (Sample Data)
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th>Expense Category</th>
+                            <th>January (IDR)</th>
+                            <th>February (IDR)</th>
+                            <th>March (IDR)</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Salaries</td>
+                            <td>6,500,000</td>
+                            <td>6,500,000</td>
+                            <td>6,750,000</td>
+                        </tr>
+
+                        <tr>
+                            <td>Rent</td>
+                            <td>2,000,000</td>
+                            <td>2,000,000</td>
+                            <td>2,000,000</td>
+                        </tr>
+
+                        <tr>
+                            <td>Utilities</td>
+                            <td>850,000</td>
+                            <td>910,000</td>
+                            <td>875,000</td>
+                        </tr>
+
+                        <tr>
+                            <td>Office Supplies</td>
+                            <td>400,000</td>
+                            <td>325,000</td>
+                            <td>460,000</td>
+                        </tr>
+
+                        <tr class="total-row">
+                            <th>Total</th>
+                            <th>9,750,000</th>
+                            <th>9,735,000</th>
+                            <th>10,085,000</th>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             RECORD EXPENSE FORM
+             ================================ -->
+
+        <section id="record-expense" class="financial-section">
+
+            <h2>Record Expense</h2>
+
+            <form action="#" method="get" class="expense-form">
+
+                <fieldset>
+
+                    <legend>Expense Information</legend>
+
+
+                    <!-- Expense Category -->
+
+                    <div class="form-group">
+
+                        <label for="expenseCategory">
+                            Expense Category:
+                        </label>
+
+                        <select
+                            id="expenseCategory"
+                            name="expenseCategory"
+                            required>
+
+                            <option value="">
+                                Select Category
+                            </option>
+
+                            <option value="Salaries">Salaries</option>
+                            <option value="Rent">Rent</option>
+                            <option value="Utilities">Utilities</option>
+                            <option value="Office Supplies">Office Supplies</option>
+                            <option value="Other">Other</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Expense Date -->
+
+                    <div class="form-group">
+
+                        <label for="expenseDate">
+                            Expense Date:
+                        </label>
+
+                        <input
+                            type="date"
+                            id="expenseDate"
+                            name="expenseDate"
+                            required>
+
+                    </div>
+
+
+                    <!-- Expense Amount -->
+
+                    <div class="form-group">
+
+                        <label for="expenseAmount">
+                            Amount (IDR):
+                        </label>
+
+                        <input
+                            type="number"
+                            id="expenseAmount"
+                            name="expenseAmount"
+                            min="0"
+                            step="1000"
+                            placeholder="Enter expense amount"
+                            required>
+
+                    </div>
+
+
+                    <!-- Expense Description -->
+
+                    <div class="form-group">
+
+                        <label for="expenseDescription">
+                            Description:
+                        </label>
+
+                        <textarea
+                            id="expenseDescription"
+                            name="expenseDescription"
+                            rows="3"
+                            placeholder="Enter expense details"></textarea>
+
+                    </div>
+
+
+                    <!-- Form Buttons -->
+
+                    <div class="form-buttons">
+
+                        <button type="submit" class="submit-btn">
+                            Record Expense
+                        </button>
+
+                        <button type="reset" class="reset-btn">
+                            Reset
+                        </button>
+
+                    </div>
+
+                </fieldset>
+
+                <p class="form-note">
+                    This form demonstrates the dashboard layout.
+                    Transactions are not stored in a database.
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================
+         FOOTER
+         ================================ -->
+
+    <footer>
+
+        <p>
+            Created by Dayyana Shaima Gazala - 4.41.25.9.04
+        </p>
+
+        <p>
+            Basic Programming - Computerized Accounting
+        </p>
+
+        <p>
+            &copy; 2025 Taxora Consulting. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
