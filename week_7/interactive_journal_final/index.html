@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive General Journal Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Interactive General Journal Form</h1>
+            <p>Taxora Consulting - General Journal Transaction Recording</p>
+        </header>
+
+        <form id="journalForm">
+
+            <fieldset>
+                <legend>Journal Transaction Details</legend>
+
+                <p>
+                    <label for="date">Transaction Date:</label><br>
+                    <input type="date" id="date" name="date" required>
+                </p>
+
+                <p>
+                    <label for="refNo">Reference Number:</label><br>
+                    <input type="text" id="refNo" name="refNo"
+                           required placeholder="JV-001">
+                </p>
+
+                <p>
+                    <label for="description">Transaction Description:</label><br>
+                    <input type="text" id="description" name="description"
+                           required placeholder="Enter transaction description">
+                </p>
+
+                <p>
+                    <label for="account">Account Name:</label><br>
+                    <select id="account" name="account" required>
+                        <option value="">-- Select Account --</option>
+                        <option value="Cash">Cash</option>
+                        <option value="Bank">Bank</option>
+                        <option value="Accounts Receivable">Accounts Receivable</option>
+                        <option value="Service Revenue">Service Revenue</option>
+                        <option value="Salaries Expense">Salaries Expense</option>
+                        <option value="Accounts Payable">Accounts Payable</option>
+                        <option value="Share Capital">Share Capital</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="debit">Debit Amount:</label><br>
+                    <input type="number" id="debit" name="debit"
+                           min="0" step="any" placeholder="0">
+                </p>
+
+                <p>
+                    <label for="credit">Credit Amount:</label><br>
+                    <input type="number" id="credit" name="credit"
+                           min="0" step="any" placeholder="0">
+                </p>
+
+            </fieldset>
+
+            <p class="button-group">
+                <button type="button" id="addRowBtn">
+                    Add Transaction Row
+                </button>
+
+                <button type="button" id="saveJournalBtn">
+                    Save Journal (Dummy)
+                </button>
+            </p>
+
+        </form>
+
+        <section class="table-section">
+
+            <h2>Journal Transaction List</h2>
+
+            <table id="transactionTable">
+
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Ref. No.</th>
+                        <th>Description</th>
+                        <th>Account</th>
+                        <th>Debit</th>
+                        <th>Credit</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="transactionBody">
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
